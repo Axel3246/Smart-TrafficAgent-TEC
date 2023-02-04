@@ -123,13 +123,13 @@ There is a three step process to use this project and see the simulation in Unit
 <div align="center">
   <img src="./Images/coord.png" width="40%" height="40%">
   <p align="center">
-    <i> Grid space enviroment for the agent </i>
+    <i> Delimited Grid Enviroment For The Agents </i>
   </p>
 </div>
 
 ### Step One: Generating The JSON Objects
 
-1. Open the `Simulation-DataServer` folder and go to `SPWN_v3.1.2022.ipynb` file. By default, the ipynb file will generate <strong> 10 agents</strong> with <strong>50 steps</strong>. If you want to change this, you could go to the <i> parameters </i> section and change the <i>steps</i> and <i>agents</i> values.
+1. Open the `Simulation-DataServer` folder and go to `SPWN_v3.1.2022.ipynb` file. By default, the ipynb file will generate <strong> 10 agents</strong> with <strong>50 steps</strong>. If you want to change this, you may go to the <i> parameters </i>section and change the <i>steps</i> and <i>agents</i> values.
 
    ```py
    parameters = {
@@ -137,14 +137,14 @@ There is a three step process to use this project and see the simulation in Unit
     'size': 13,  # Height and length of the grid
     'steps': YOUR VALUE,
     'agents': YOUR VALUE,  # Percentage of grid covered by trees
-  }
+    }
    ```
 2. Once the parameters are set, click Run All. If done correctly, you should see at the bottom of the ipynb file an animation like the one stated below.
 
 <div align="center">
-  <img src="./Images/simpyb.gif" width="40%" height="40%">
+  <img src="./Images/simpyb.gif" width="25%" height="25%">
   <p align="center">
-    <i> Agent animation following the parameters </i>
+    <i> Matplotlib's Agent Animation </i>
   </p>
 </div>
 
@@ -152,7 +152,7 @@ There is a three step process to use this project and see the simulation in Unit
 
 ### Step Two: Starting The Python Server
 
-1. Once you've done <strong> step one<strong>, go to `tc2008B_server.py` and click run. This step is taking in consideration that the user has already established their free localhost port in the file.
+1. Once you've done <strong> step one</strong>, go to `tc2008B_server.py` and click run. This step is taking in consideration that the user has already established their free localhost port in the file.
 
 2. Now the server is running and it's actively listening for Unity's POST request.
 
@@ -160,10 +160,10 @@ There is a three step process to use this project and see the simulation in Unit
 
 1. Now that we have the server running, the only thing left is to open Unity Hub and run the file `Reto Multiagentes v23-11-135`, which is inside the `Unity-TSTEC.zip` file. This step is taking in consideration that the user has already established their free localhost port in the `clon.cs` file.
 
-2. If everything is in order, Unity will generate a POST request to `tc2008B_server.py` and will recieve the JSON object from the `data.json` and `dataSems.json` files in return, starting the simulation. It should look similar to this, depending on the parameters that had been previously set in <strong> step one<strong>.
+2. If everything is in order, Unity will generate a POST request to `tc2008B_server.py` and will recieve the JSON object from the `data.json` and `dataSems.json` files in return, starting the simulation. It should look similar to this, depending on the parameters that had been previously set in <strong> step one</strong>.
 
 <div align="center">
-  <img src="./Images/unsim.gif" width="40%" height="40%">
+  <img src="./Images/unsim.gif" width="30%" height="30%">
   <p align="center">
     <i> Unity Engine Simulation of the Smart Agents </i>
   </p>
@@ -172,10 +172,13 @@ There is a three step process to use this project and see the simulation in Unit
 ### What If I Want A New Set Of Data?
 
 Simple! Just repeat <strong>step one</strong> and you're good to go!
+<p align="right">(<a href="#readme-top">Take me up!</a>)</p>
 
-Congratulations! You have correctly setup a local copy of the project. Start experimenting!
+## That's a Wrap!
 
-_For more examples, images, and models please refer to the [Documentation] of the project!(https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing)_
+Congratulations! You have correctly setup a local copy of the project. Start experimenting! If you found this repository interesting, don't forget to star or fork it, it's highly appreciated :)!
+
+_For more examples, images, and models please refer to the project's [Documentation](https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing)_
 
 <p align="right">(<a href="#readme-top">Take me up!</a>)</p>
 
