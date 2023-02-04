@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Axel3246/Smart-TrafficAgent-TEC">
-    <img src="./Images/TLogo.jpeg" alt="Logo" width="30%" height="30%">
+    <img src="https://github.com/Axel3246/Smart-TrafficAgent-TEC/blob/main/Images/TLogo.png?raw=true" alt="Logo" width="30%" height="30%">
   </a>
 
 <h3 align="center">Smart Traffic Agent for ITESM's Roundabout</h3>
