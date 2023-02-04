@@ -47,7 +47,10 @@
 ## About The Project
 
 <div align="center">
-  <img src="./Images/rgs.jpeg" width="60%" height="60%">
+  <img src="./Images/rgs.jpeg" width="40%" height="40%">
+  <p align="center">
+    <i> Garza Sada and Av. del Estado Roundabout </i>
+  </p>
 </div>
 <br>
 
