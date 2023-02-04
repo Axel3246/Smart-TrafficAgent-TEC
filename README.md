@@ -52,7 +52,6 @@
     <i> Garza Sada and Av. del Estado Roundabout </i>
   </p>
 </div>
-<br>
 
 Currently, one of the main problems in any city and metropolis is traffic. The exponential increase of habitants has allowed this to become more frequent and increasingly common on the streets, avenues, intersections, and crossroads of cities. Various infrastructure, such as bridges or roundabouts, has been installed with the aim of avoiding this, but they do not always have the necessary efficiency to solve the problem.
 
