@@ -1,19 +1,20 @@
+<a name="readme-top"></a>
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Axel3246/Smart-TrafficAgent-TEC">
+  <a target="_blank" href="https://github.com/Axel3246/Smart-TrafficAgent-TEC">
     <img src="https://github.com/Axel3246/Smart-TrafficAgent-TEC/blob/main/Images/TLogo.png?raw=true" alt="Logo" width="30%" height="30%">
   </a>
 
-<h3 align="center">Smart Traffic Agent for ITESM's Roundabout</h3>
+<h3 align="center">Smart Traffic Agent for Distrito Tec Roundabout</h3>
 
   <p align="center">
     This project uses agent.py and Unity to model and simulate <br/>
     an agent capable of resolving ITESM's roundabout traffic problem.
     <br /><br />
-    <a href="https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing"><strong>Explore the docs »</strong></a>
+    <a target="_blank" href="https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://drive.google.com/file/d/1x1VTxBMP88dZhI_Mhj-ZAJsGYBUmotuv/view?usp=share_link">View Live Demo</a>
+    <a target="_blank" href="https://drive.google.com/file/d/1x1VTxBMP88dZhI_Mhj-ZAJsGYBUmotuv/view?usp=share_link">View Live Demo</a>
   </p>
 </div>
 
@@ -83,7 +84,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-1. Be sure to have the lastest version of Python available in your computer. <a href="https://www.python.org/downloads/">Download Python </a> from the official website if you do not currently possess the lastest version.
+1. Be sure to have the lastest version of Python available in your computer. <a target="_blank" href="https://www.python.org/downloads/">Download Python </a> from the official website if you do not currently possess the lastest version.
 
 2. Verify you have pip installed in your computer. You can check by running the following command in your terminal.
 
@@ -93,9 +94,9 @@ To get a local copy up and running follow these simple example steps.
   ```
 ### Installation
 
-1. Install Unity Hub and be sure to set it's version to <a href="https://unity.com/releases/editor/whats-new/2021.3.8">2021.3.8</a>.
+1. Install Unity Hub and be sure to set it's version to <a target="_blank" href="https://unity.com/releases/editor/whats-new/2021.3.8">2021.3.8</a>.
 
-2. Install any IDE of your choice. For this project we recommend <a href="https://code.visualstudio.com/"> Visual Studio Code</a>.
+2. Install any IDE of your choice. For this project we recommend <a target="_blank" href="https://code.visualstudio.com/"> Visual Studio Code</a>.
 
 3. Clone the repo.
    ```sh
@@ -117,17 +118,64 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+There is a three step process to use this project and see the simulation in Unity. Before these steps are declared, this agent is based on a grid enviroment which can be seen in the next picture.
 
 <div align="center">
-  <img src="https://github.com/Axel3246/MisCompas-WebApp/blob/main/Images/Rating.png?raw=true" width="45%" height="45%">
+  <img src="./Images/coord.png" width="40%" height="40%">
   <p align="center">
-    Rating Screen
-    <br/>
+    <i> Grid space enviroment for the agent </i>
   </p>
 </div>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Step One: Generating The JSON Objects
+
+1. Open the `Simulation-DataServer` folder and go to `SPWN_v3.1.2022.ipynb` file. By default, the ipynb file will generate <strong> 10 agents</strong> with <strong>50 steps</strong>. If you want to change this, you could go to the <i> parameters </i> section and change the <i>steps</i> and <i>agents</i> values.
+
+   ```py
+   parameters = {
+    # REMEMBER: steps are the "movements" an agent will make, which means more agents need more steps to finish the simulation.
+    'size': 13,  # Height and length of the grid
+    'steps': YOUR VALUE,
+    'agents': YOUR VALUE,  # Percentage of grid covered by trees
+  }
+   ```
+2. Once the parameters are set, click Run All. If done correctly, you should see at the bottom of the ipynb file an animation like the one stated below.
+
+<div align="center">
+  <img src="./Images/simpyb.gif" width="40%" height="40%">
+  <p align="center">
+    <i> Agent animation following the parameters </i>
+  </p>
+</div>
+
+3. Two archives will pop up in your folder: `data.json` and `dataSems.json`. These folders contain a JSON object with data generated from the ipynb simulation. The JSON will be deserialized in Unity to start the visualization of the data in the engine.
+
+### Step Two: Starting The Python Server
+
+1. Once you've done <strong> step one<strong>, go to `tc2008B_server.py` and click run. This step is taking in consideration that the user has already established their free localhost port in the file.
+
+2. Now the server is running and it's actively listening for Unity's POST request.
+
+### Step Three: Running The Simulation In Unity!
+
+1. Now that we have the server running, the only thing left is to open Unity Hub and run the file `Reto Multiagentes v23-11-135`, which is inside the `Unity-TSTEC.zip` file. This step is taking in consideration that the user has already established their free localhost port in the `clon.cs` file.
+
+2. If everything is in order, Unity will generate a POST request to `tc2008B_server.py` and will recieve the JSON object from the `data.json` and `dataSems.json` files in return, starting the simulation. It should look similar to this, depending on the parameters that had been previously set in <strong> step one<strong>.
+
+<div align="center">
+  <img src="./Images/unsim.gif" width="40%" height="40%">
+  <p align="center">
+    <i> Unity Engine Simulation of the Smart Agents </i>
+  </p>
+</div>
+
+### What If I Want A New Set Of Data?
+
+Simple! Just repeat <strong>step one</strong> and you're good to go!
+
+Congratulations! You have correctly setup a local copy of the project. Start experimenting!
+
+_For more examples, images, and models please refer to the [Documentation] of the project!(https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing)_
 
 <p align="right">(<a href="#readme-top">Take me up!</a>)</p>
 
@@ -136,7 +184,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Here you'll find the team that made possible this project. Feel free to check out their GitHub profiles too!
 
-<a href="https://github.com/axel3246/Smart-TrafficAgent-TEC/graphs/contributors">
+<a target="_blank" href="https://github.com/axel3246/Smart-TrafficAgent-TEC/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=axel3246/Smart-TrafficAgent-TEC" />
 </a>
 
