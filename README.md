@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Axel3246/Smart-TrafficAgent-TEC">
-    <img src="./Images/TLogo.jpeg" alt="Logo" width="80" height="80">
+    <img src="./Images/TLogo.jpeg" alt="Logo" width="30%" height="30%">
   </a>
 
 <h3 align="center">Smart Traffic Agent for ITESM's Roundabout</h3>
@@ -53,7 +53,7 @@
 
 Currently, one of the main problems in any city and metropolis is traffic. The exponential increase of habitants has allowed this to become more frequent and increasingly common on the streets, avenues, intersections, and crossroads of cities. Various infrastructure, such as bridges or roundabouts, has been installed with the aim of avoiding this, but they do not always have the necessary efficiency to solve the problem.
 
-The roundabout located at Garza Sada and Av. del Estado is one of the busiest in Distrito Tec. It was remodeled back in 2017 due to the high incidence of car accidents recorded in 2015 (86). This allowed pedestrians and drivers to enjoy various improvements, such as the expansion of roadways and sidewalks, increased lighting, the leveling of sidewalks and pavement, etc. There was synchronization between traffic lights, which theoretically would allow for better vehicle and pedestrian flow. However this feature cannot be seen during the busiest hours of the roundabout and its avenues allowing traffic accumulation, thus slowing the flow.
+The roundabout located at Garza Sada and Av. del Estado is one of the busiest in Distrito Tec. It was remodeled back in 2017 due to the high incidence of car accidents recorded in 2015 (86). This allowed pedestrians and drivers to enjoy various improvements. There was synchronization between traffic lights, which theoretically would allow for better vehicle and pedestrian flow. However this feature cannot be seen during the busiest hours of the roundabout and its avenues allowing traffic accumulation, thus slowing the flow.
 
 That leads us to the purpose of this project, which is to carry out a simulation with agent and computational graphics that allows to improve the vehicle flow in the Garza Sada and Av. del Estado roundabout. The simulation consists of two solutions described below:
 <br></br>
@@ -95,7 +95,7 @@ To get a local copy up and running follow these simple example steps.
 
 2. Install any IDE of your choice. For this project we recommend <a href="https://code.visualstudio.com/"> Visual Studio Code</a>.
 
-3. Clone the repo
+3. Clone the repo.
    ```sh
    git clone https://github.com/Axel3246/Smart-TrafficAgent-TEC
    ```
