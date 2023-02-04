@@ -9,8 +9,8 @@
 <h3 align="center">Smart Traffic Agent for Distrito Tec Roundabout</h3>
 
   <p align="center">
-    This project uses agent.py and Unity to model and simulate <br/>
-    an agent capable of resolving ITESM's roundabout traffic problem.
+    This project uses Agent.py and Unity to model and simulate <br/>
+    an agent capable of resolving Distrito Tec roundabout traffic problem.
     <br /><br />
     <a target="_blank" href="https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing"><strong>Explore the docs »</strong></a>
     <br />
@@ -133,7 +133,11 @@ There is a three step process to use this project and see the simulation in Unit
 
    ```py
    parameters = {
-    # REMEMBER: steps are the "movements" an agent will make, which means more agents need more steps to finish the simulation.
+    '''
+     REMEMBER: steps are the "movements" an agent 
+     will make, which means more agents need more steps 
+     to finish the simulation.
+    '''
     'size': 13,  # Height and length of the grid
     'steps': YOUR VALUE,
     'agents': YOUR VALUE,  # Percentage of grid covered by trees
