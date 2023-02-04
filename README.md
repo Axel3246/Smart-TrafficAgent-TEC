@@ -176,7 +176,9 @@ Simple! Just repeat <strong>step one</strong> and you're good to go!
 
 ## That's a Wrap!
 
-Congratulations! You have correctly setup a local copy of the project. Start experimenting! If you found this repository interesting, don't forget to star or fork it, it's highly appreciated :)!
+Congratulations! You have correctly setup a local copy of the project. Start experimenting! 
+
+If you found this repository interesting, don't forget to stargaze it, it's highly appreciated :)!
 
 _For more examples, images, and models please refer to the project's [Documentation](https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing)_
 
