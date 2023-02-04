@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Axel3246/Smart-TrafficAgent-TEC">
-    <img src="./Images/TLogo.jpeg" alt="Logo" width="30%" height="30%">
+    <img src="https://github.com/Axel3246/Smart-TrafficAgent-TEC/blob/main/Images/TLogo.png?raw=true" alt="Logo" width="30%" height="30%">
   </a>
 
 <h3 align="center">Smart Traffic Agent for ITESM's Roundabout</h3>
@@ -47,9 +47,11 @@
 ## About The Project
 
 <div align="center">
-  <img src="./Images/rgs.jpeg" width="60%" height="60%">
+  <img src="./Images/rgs.jpeg" width="40%" height="40%">
+  <p align="center">
+    <i> Garza Sada and Av. del Estado Roundabout </i>
+  </p>
 </div>
-<br>
 
 Currently, one of the main problems in any city and metropolis is traffic. The exponential increase of habitants has allowed this to become more frequent and increasingly common on the streets, avenues, intersections, and crossroads of cities. Various infrastructure, such as bridges or roundabouts, has been installed with the aim of avoiding this, but they do not always have the necessary efficiency to solve the problem.
 
