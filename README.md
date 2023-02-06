@@ -94,7 +94,7 @@ To get a local copy up and running follow these simple example steps.
   ```
 ### Installation
 
-1. Install Unity Hub and be sure to set it's version to <a target="_blank" href="https://unity.com/releases/editor/whats-new/2021.3.8">2021.3.8</a>.
+1. Install Unity Hub and set the editor version to <a target="_blank" href="https://unity.com/releases/editor/whats-new/2021.3.8">2021.3.8</a>.
 
 2. Install any IDE of your choice. For this project we recommend <a target="_blank" href="https://code.visualstudio.com/"> Visual Studio Code</a>.
 
@@ -118,7 +118,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-There is a three step process to use this project and see the simulation in Unity. Before these steps are declared, this agent is based on a grid enviroment which can be seen in the next picture.
+There is a three step process to use this project and see the simulation in Unity. Before these steps , this agent is based on a grid enviroment which can be seen in the next picture.
 
 <div align="center">
   <img src="./Images/coord.png" width="40%" height="40%">
@@ -140,10 +140,10 @@ There is a three step process to use this project and see the simulation in Unit
     '''
     'size': 13,  # Height and length of the grid
     'steps': YOUR VALUE,
-    'agents': YOUR VALUE,  # Percentage of grid covered by trees
+    'agents': YOUR VALUE,  # Number of 'car' agents
     }
    ```
-2. Once the parameters are set, click Run All. If done correctly, you should see at the bottom of the ipynb file an animation like the one stated below.
+2. Once the parameters are set, click Run All. If done correctly, you should see at the bottom of the ipynb file an animation like the following.
 
 <div align="center">
   <img src="./Images/simpyb.gif" width="25%" height="25%">
@@ -152,7 +152,7 @@ There is a three step process to use this project and see the simulation in Unit
   </p>
 </div>
 
-3. Two archives will pop up in your folder: `data.json` and `dataSems.json`. These folders contain a JSON object with data generated from the ipynb simulation. The JSON will be deserialized in Unity to start the visualization of the data in the engine.
+3. At the same time, two archives will pop up in your folder: `data.json` and `dataSems.json`. These folders contain a JSON object with data generated from the ipynb simulation. The JSON objects will be deserialized in Unity to start the visualization of the data in the engine.
 
 ### Step Two: Starting The Python Server
 
@@ -175,14 +175,14 @@ There is a three step process to use this project and see the simulation in Unit
 
 ### What If I Want A New Set Of Data?
 
-Simple! Just repeat <strong>step one</strong> and you're good to go!
+Simple! Just repeat <strong>step one</strong>, run Unity again and you're good to go!
 <p align="right">(<a href="#readme-top">Take me up!</a>)</p>
 
 ## That's a Wrap!
 
 Congratulations! You have correctly setup a local copy of the project. Start experimenting! 
 
-If you found this repository interesting, don't forget to stargaze it, it's highly appreciated :)!
+If you found this repository interesting, don't forget to star it, it's highly appreciated :)!
 
 _For more examples, images, and models please refer to the project's [Documentation](https://drive.google.com/drive/folders/14CkqHgOAIuTdzL1cLgOgP30bt8ABbcis?usp=sharing)_
 
