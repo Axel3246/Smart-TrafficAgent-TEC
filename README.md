@@ -38,7 +38,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributors</a></li>
+    <li><a href="#contributing">The Team</a></li>
     <li><a href="#license">License</a></li>
 
   </ol>
@@ -190,12 +190,12 @@ _For more examples, images, and models please refer to the project's [Documentat
 <p align="right">(<a href="#readme-top">Take me up!</a>)</p>
 
 <!-- CONTRIBUTING -->
-## Contributors
+## The Team
 
 Here you'll find the team that made possible this project. Feel free to check out their GitHub profiles too!
 
 <a target="_blank" href="https://github.com/axel3246/Smart-TrafficAgent-TEC/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=axel3246/Smart-TrafficAgent-TEC" />
+  <img src="https://stg.contrib.rocks/image?repo=axel3246/Smart-TrafficAgent-TEC" />
 </a>
 
 <p align="right">(<a href="#readme-top">Take me up!</a>)</p>
